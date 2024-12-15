@@ -1,0 +1,16 @@
+{
+    "roles": [
+        {
+            "role_name": "Product Designer"
+        },
+        {
+            "role_name": "Flutter Developer"
+        },
+        {
+            "role_name": "QA Tester"
+        },
+        {
+            "role_name": "Product Owner"
+        }
+    ]
+}
