@@ -197,6 +197,7 @@ export class AppComponent implements OnInit {
     public submitForm() {
         if (this.employeeForm().valid) {
             if (this.employeeForm().value.id === null) {
+                delete this.employeeForm().value['id'];
                 this.appService.createEmployee(this.employeeForm().value).subscribe((res: any) => {
                     if(res){
                         this.message.success('Employee data has been created');
