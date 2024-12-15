@@ -17,8 +17,8 @@
                     <span nz-icon nzType="left" nzTheme="outline"></span>
                 </button>
                 <span>
-                    {{currentDate.format('MMMM').toUpperCase()}}
-                    {{currentDate.format('YYYY')}}
+                    {{currentDate().format('MMMM').toUpperCase()}}
+                    {{currentDate().format('YYYY')}}
                 </span>
                 <button class="calendar__nav-btn" (click)="nextMonth()" >
                     <span nz-icon nzType="right" nzTheme="outline"></span>
@@ -27,7 +27,7 @@
         </div>
         <div class="calendar__month">
             <div class="calendar__day-names">
-                @for (name of namesOfDays(); track name) {
+                @for (name of namesOfDays; track name) {
                     <div class="calendar__day-name">{{name}}</div>
                 }
             </div>
